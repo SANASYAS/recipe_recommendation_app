@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FLAVOR FUSION</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color:rgba(255, 162, 0, 0.603)">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand funky-font" href="#" style="font-family: Garamond;">FLAVOR FUSION - YOUR RECIPE COMPANION</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}" style="font-family: Garamond;color:white;">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'recipes' %}" style="font-family: Garamond;color:white;">RECIPES</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}" style="font-family: Garamond;color:white;">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}" style="font-family: Garamond;color:white;">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="text-center mt-4" style="font-family: Garamond;"><b>About Us</b></h2>
+        <p class="text-center" style="font-family: Garamond;"><b>Welcome to Flavor Fusion! We are passionate about sharing delicious South Indian recipes with you. Our goal is to provide you with a variety of recipes to suit your tastes and preferences.</b></p>
+        <h3 class="mt-4" style="font-family: Garamond;"><b>Our Mission</b></h3>
+        <p style="font-family: Garamond;"><b>At Flavor Fusion, we strive to bring you the best of South Indian cuisine. We believe that food is not just about nourishment, but also about culture, tradition, and love. Our mission is to help you create mouth-watering dishes that you and your loved ones can enjoy.</b></p>
+        <h3 class="mt-4" style="font-family: Garamond;"><b>What We Offer??</b></h3>
+        <ul>
+            <li style="font-family: Garamond;"><b>Authentic South Indian recipes</b></li>
+            <li style="font-family: Garamond;"><b>Step-by-step cooking instructions</b></li>
+            <li style="font-family: Garamond;"><b>Tips and tricks for perfecting your dishes</b></li>
+            <li style="font-family: Garamond;"><b>Ingredient substitution suggestions</b></li>
+            <li style="font-family: Garamond;"><b>Healthy and nutritious meal ideas</b></li>
+        </ul>
+        <h3 class="mt-4" style="font-family: Garamond;"><b>Join Our Community</b></h3>
+        <p style="font-family: Garamond;"><b>We invite you to join our community of food lovers. Share your cooking experiences, ask questions, and connect with others who share your passion for South Indian cuisine. Together, we can explore the rich and diverse world of flavors that South India has to offer.</b></p>
+    </div>
+
+    <footer id="contact" class="bg-dark text-white text-center py-3">
+        <p style="font-family: Garamond;font-size: larger;"><b>&copy; 2024 Flavor Fusion. All rights reserved.</b></b></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

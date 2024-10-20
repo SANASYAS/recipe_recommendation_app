@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body style="background-color:rgba(255, 162, 0, 0.603)">
+    <div class="container text-center">
+        <img src="{% static 'images/ThankYou_image.jpg' %}" alt="Thank You Image" class="img-fluid" height="600" width="720">
+        <p style="font-family: Garamond;font-size: 200%;"><center>YOUR REVIEW HAS BEEN SENT SUCCESSFULLY!!</center></p>
+        <a href="{% url 'contact' %}" class="btn btn-primary" style="font-family: Garamond;font-size:200%;">
+        <center>BACK TO HOME</center></a>
+    </div>
+</body>
+</html>

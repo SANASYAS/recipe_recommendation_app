@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - FLAVOR FUSION</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            border: 4px solid black;
+            
+        }
+    </style>
+</head>
+<body style="background-color:rgba(255, 162, 0, 0.603)">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand funky-font" href="#" style="font-family: Garamond;color:white;">FLAVOR FUSION - YOUR RECIPE COMPANION</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}" style="font-family: Garamond;color:white;">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'recipes' %}" style="font-family: Garamond;color:white;">RECIPES</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}" style="font-family: Garamond;color:white;">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}" style="font-family: Garamond;color:white;">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="recipes" class="container">
+        <h2 class="text-center mt-4" style="font-family: Garamond;color:black;"><b>FEATURED RECIPES</b></h2>
+        <div class="row">
+            <!-- Recipe 1: Dosa -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/dosa.jpg' %}" class="card-img-top" alt="Dosa" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Dosa</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Crispy and golden, dosa is a popular South Indian pancake 
+                            made from fermented rice 
+                        and lentil batter. It's typically served with sambar and coconut chutney.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 2: Idli -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/idli.jpg' %}" class="card-img-top" alt="Idli" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Idli</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Idli are soft, fluffy steamed cakes made from a fermented batter of rice and urad dal (black gram). They're a staple breakfast item in South India.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 3: Sambar -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/sambar.jpg' %}" class="card-img-top" alt="Sambar" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Sambar</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Sambar is a hearty, spiced lentil stew cooked with 
+                            vegetables and tamarind. It's a classic South Indian dish that's typically served with rice, dosa, or idli.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 4: Coconut Chutney -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/coconut_chutney.jpg' %}" class="card-img-top" alt="Coconut Chutney" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Coconut Chutney</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Coconut chutney is a refreshing and tangy condiment made from freshly 
+                            grated coconut, green chilies, and spices. It’s a perfect accompaniment to dosa, idli, or vada.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 5: Vada -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/vada.jpg' %}" class="card-img-top" alt="Vada" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Vada</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Vada are savory, deep-fried doughnuts made from urad dal or chana dal. They are crispy on the outside and soft on the inside, and are commonly served with sambar and chutney.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 6: Pongal -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/pongal.jpg' %}" class="card-img-top" alt="Pongal" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Pongal</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Pongal is a comforting and creamy rice dish cooked with black pepper, ginger, and ghee. It’s often enjoyed for breakfast and garnished with cashews and curry leaves for added flavor.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 7: Chicken Biryani -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/chicken_biryani.jpg' %}" class="card-img-top" alt="Chicken Biryani" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Chicken Biryani</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Aromatic and flavorful, chicken biryani is a classic Indian rice dish made with marinated chicken, basmati rice, and a blend of spices.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 8: Chicken Fried Rice -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/chicken_fried_rice.jpg' %}" class="card-img-top" alt="Chicken Fried Rice" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Chicken Fried Rice</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">A quick and tasty dish, chicken fried rice is made with stir-fried rice, vegetables, and chicken, seasoned with soy sauce and other spices.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 9: Veg Meals -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/veg_meals.jpg' %}" class="card-img-top" alt="Veg Meals" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Veg Meals</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">A wholesome and nutritious vegetarian meal, consisting of a variety of vegetables cooked with spices and served with rice or bread.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 10: Chapathi -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/chapathi.jpg' %}" class="card-img-top" alt="Chapathi" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Chapathi</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Chapathi is a simple, unleavened flatbread made from whole wheat flour, often served with a variety of curries and side dishes.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 11: Poori -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/poori.jpg' %}" class="card-img-top" alt="Poori" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Poori</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Poori is a deep-fried bread made from unleavened wheat flour dough, served with various curries or vegetables.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 12: Channa Masala -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/channa_masala.jpg' %}" class="card-img-top" alt="Channa Masala" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Channa Masala</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Channa Masala is a spicy and tangy chickpea curry, typically enjoyed with rice or bread.It will be so delicious.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 13: Paneer Butter Masala -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/paneer_butter_masala.jpg' %}" class="card-img-top" alt="Paneer Butter Masala" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Paneer Butter Masala</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Paneer Butter Masala is a creamy and rich curry made with paneer (Indian cottage cheese) in a tomato-based gravy.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 14: Coffee -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/coffee.jpg' %}" class="card-img-top" alt="Coffee" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Coffee</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">A classic beverage made from brewed coffee beans, enjoyed hot or cold with a variety of flavorings and milk options.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe 15: Chicken Noodles -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'images/chicken_noodles.jpg' %}" class="card-img-top" alt="Chicken Noodles" height="200" width="200">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Garamond;"><b>Chicken Noodles</b></h5>
+                        <p class="card-text" style="font-family: Garamond;">Delicious and quick-to-make, chicken noodles are stir-fried with vegetables and seasoned with soy sauce and spices for a savory dish.</p>
+                        <a href="#" class="btn btn-primary" style="font-family: Garamond;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p style="font-family: Garamond;color:white;">&copy; 2024 Flavor Fusion. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    background-color:rgb(255, 162, 0)
+}
+.bg-dark text-white text-center py-3{
+    font-family: 'Times New Roman';
+}
+.nav-item{
+    font-family: 'Times New Roman';
+}
+.navbar-brand funky-font{
+    font-family: 'Times New Roman';
+    color:white;
+}
+.times-font {
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar-brand {
+    font-size: 1.5em;
+    color:white;
+}
+.nav-link {
+    font-size: 1.5em;
+    color:white;
+}
+footer {
+    font-size: 1.5em; 
+    color:white;
+}
+.hero-content {
+    color: white; 
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Recipes</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Recommended Recipes</h2>
+        <ul class="list-group">
+            {% for recipe in recipes %}
+                <li class="list-group-item">
+                    <a href="{% url 'recipe_detail' recipe.pk %}">{{ recipe.title }}</a>
+                </li>
+            {% empty %}
+                <li class="list-group-item">No recipes found with the given ingredients.</li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'recipe_list' %}" class="btn btn-primary mt-3">Back to List</a>
+    </div>
+</body>
+</html>

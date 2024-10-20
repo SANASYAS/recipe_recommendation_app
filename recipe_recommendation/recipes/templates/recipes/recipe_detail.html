@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ recipe.title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>{{ recipe.title }}</h2>
+        <p><strong>Ingredients:</strong></p>
+        <p>{{ recipe.ingredients }}</p>
+        <p><strong>Steps:</strong></p>
+        <p>{{ recipe.steps }}</p>
+        <p><strong>Cuisine:</strong> {{ recipe.cuisine }}</p>
+        {% if recipe.nutritional_info %}
+            <p><strong>Nutritional Information:</strong></p>
+            <p>{{ recipe.nutritional_info }}</p>
+        {% endif %}
+        <a href="{% url 'recipe_list' %}" class="btn btn-primary mt-3">Back to List</a>
+    </div>
+</body>
+</html>

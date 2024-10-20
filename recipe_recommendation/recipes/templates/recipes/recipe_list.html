@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Recipe List</h2>
+        <form action="{% url 'recommend_recipes' %}" method="get">
+            <div class="form-group">
+                <label for="ingredients">Enter ingredients:</label>
+                <input type="text" name="ingredients" id="ingredients" class="form-control" placeholder="e.g., chicken, garlic">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Get Recommendations</button>
+        </form>
+        <ul class="list-group mt-3">
+            {% for recipe in recipes %}
+                <li class="list-group-item">
+                    <a href="{% url 'recipe_detail' recipe.pk %}">{{ recipe.title }}</a>
+                </li>
+            {% empty %}
+                <li class="list-group-item">No recipes available.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
