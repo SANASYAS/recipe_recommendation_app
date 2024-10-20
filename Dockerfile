@@ -7,10 +7,10 @@ WORKDIR /app #Use /app as the working directory
 # Copy the requirements file into the container
 COPY requirements.txt .
 #Install the dependencies specified in requirements.txt
-RUN pip install-no-cache-dir-r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 # Copy the entire application code into the container at /app 
 COPY . .
 # Expose the port that the application runs on (adjust if needed) 
-EXPOSE 8000
+EXPOSE 8001
 #Command to run the application 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]
